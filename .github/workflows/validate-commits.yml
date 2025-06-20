@@ -1,0 +1,9 @@
+name: Validar commits (centralizado)
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  validar:
+    uses: treew-org/central-workflows/.github/workflows/validate-commits.yml@main
