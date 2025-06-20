@@ -1,0 +1,9 @@
+name: Bloquear PR con commits inválidos
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  bloquear:
+    uses: bernahg91/treew-central-workflows/.github/workflows/block-on-invalid-commit.yml@main
